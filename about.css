@@ -1,0 +1,92 @@
+body {
+  background: linear-gradient(
+    0deg,
+    #2291eb8d 0%,
+    #2c5d82ba 30%,
+    #3eb6ee87 30%,
+    #509abd96 100%
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 90vh;
+}
+
+.container {
+  /* border: 2px solid red; */
+  width: 100%;
+  margin: 0 !important;
+  padding: 3vh !important;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  z-index: -2;
+}
+
+.containerText {
+  color: black;
+  /* font-family: "Poppins", sans-serif !important; */
+  /* border: 2px solid red; */
+  width: 60vh;
+  font-size: 2.9vh;
+  font-weight: bold;
+}
+
+.containerImage {
+  width: 80vh;
+  height: 50vh;
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, #0004);
+}
+
+@media only screen and (max-width: 1000px) {
+  /* // apply the styles here from this minimum width of  */
+  /* // 576px (medium screen sized devices) */
+
+  .containerText {
+    width: 50vh;
+    font-size: 2.2vh;
+  }
+
+  .containerImage {
+    width: 50vh;
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .containerImage {
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.1));
+  }
+
+  .containerText {
+    margin-top: 5vh;
+    width: 50vh;
+    font-size: 2.2vh;
+  }
+
+  .containerImage {
+    width: 50vh;
+    height: 30vh;
+  }
+}
+
+/* 
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+
+  .containerText{
+    color: red;
+  }
+  
+	
+} */
